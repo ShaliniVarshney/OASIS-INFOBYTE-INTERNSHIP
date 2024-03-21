@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>temprature converter By Abhishek</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Journey Jet
+    <div class="container">
+        <div class="header">Temperature converter</div>
+        
+        <div class="boxcontainer">
+            <div class="box1">
+                <p>Degrees</p>
+                <input type="number" class="takevalue" />
             </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Hill stations</a>
-                <a href="#">Best offer's</a>
-                <a href="#">Our sites</a>
-                <a href="#">Contact Us</a>
+            <div class="box1">
+                <p>Type</p>
+                <select name="" id="unit">   
+                     <option value="Fahrenheit">Fahrenheit</option>
+                     <option value="Celsius">Celsious</option>  
+                </select>
             </div>
-            <div class="register">
-                <a href="#">Register</a>
-
-            </div>
-        </nav >
-        <section class="hea-text">
-            <span>Plan your dream holiday with us!</span>
-            <h1>International Travel Agency</h1>
-
-            <br>
-            <a href="#">Book your Trip</a>
-        </section>
-    </header>
-   
-    
+        </div>
+        <div class="valuecontainer">
+            <p>Result</p>
+            <div class="value"></div>
+        </div>
+        <button onclick="temprature()" class="button">Convert</button>
+    </div>
+  <script src="main.js"></script>
 </body>
 </html>
